@@ -9,6 +9,7 @@ defmodule Slackbot.Application do
     children = [
       # Starts a worker by calling: Slackbot.Worker.start_link(arg)
       # {Slackbot.Worker, arg}
+      {Plug.Cowboy, scheme: :http, plug: Slackbot.Router, options: [port: 4000]}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
