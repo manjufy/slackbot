@@ -5,11 +5,12 @@
 ## Installation
 
 ```
-mix deps.get
+mix deps.get or mix deps.get --no-archives-check
 mix run --no-halt
 ```
 
 Go to http://localhost:4000/ping // pong
+
 
 <!-- If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 by adding `slackbot` to your list of dependencies in `mix.exs`:
